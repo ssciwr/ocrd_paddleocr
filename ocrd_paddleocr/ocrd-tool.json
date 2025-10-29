@@ -1,0 +1,21 @@
+{
+  "dockerhub": "ssciwr/ocrd_paddleocr",
+  "git_url": "https://github.com/ssciwr/ocrd_paddleocr",
+  "tools": {
+    "ocrd-paddleocr-segment": {
+      "categories": [
+        "Layout analysis"
+      ],
+      "description": "Layout segmentation with PaddleOCR",
+      "executable": "ocrd-paddleocr-segment",
+      "input_file_grp_cardinality": 1,
+      "output_file_grp_cardinality": 1,
+      "parameters": {},
+      "resources": [],
+      "steps": [
+        "layout/segmentation/region"
+      ]
+    }
+  },
+  "version": "0.0.1"
+}
