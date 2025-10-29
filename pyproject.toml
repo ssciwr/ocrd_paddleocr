@@ -12,8 +12,8 @@ license = {text = "MIT"}
 requires-python = ">=3.8"
 keywords = ["ocr", "ocr-d", "paddle-ocr"]
 dependencies = [
-    "ocrd >= 3.0.2",
-    "PaddleOCR[all]"
+    "ocrd @ git+https://github.com/dokempf/core.git@pydantic-v2",
+    "PaddleOCR[all] >= 3.3"
 ]
 dynamic = ["version"]
 
