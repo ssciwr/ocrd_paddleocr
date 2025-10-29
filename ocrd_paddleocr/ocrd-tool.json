@@ -11,7 +11,15 @@
       "input_file_grp_cardinality": 1,
       "output_file_grp_cardinality": 1,
       "parameters": {},
-      "resources": [],
+      "resources": [
+        {
+          "description": "PaddleOCR Document Layout Detection model (PP-DocLayout_plus-L)",
+          "name": "PP-DocLayout_plus-L",
+          "parameter_usage": "without-extension",
+          "size": 130396160,
+          "url": "https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/PP-DocLayout_plus-L_infer.tar"
+        }
+      ],
       "steps": [
         "layout/segmentation/region"
       ]
