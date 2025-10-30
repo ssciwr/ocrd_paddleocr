@@ -10,7 +10,21 @@
       "executable": "ocrd-paddleocr-segment",
       "input_file_grp_cardinality": 1,
       "output_file_grp_cardinality": 1,
-      "parameters": {},
+      "parameters": {
+        "layout_nms": {
+          "default": true,
+          "description": "Whether to use NMS post-processing to filter overlapping boxes.",
+          "type": "bool"
+        },
+        "threshold": {
+          "default": 50.0,
+          "description": "Confidence threshold when to consider a detected region.",
+          "format": "float",
+          "maximum": 100,
+          "minimum": 0,
+          "type": "number"
+        }
+      },
       "resources": [
         {
           "description": "PaddleOCR Document Layout Detection model (PP-DocLayout_plus-L)",

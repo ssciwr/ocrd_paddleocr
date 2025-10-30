@@ -38,16 +38,16 @@ class PaddleOCRProcessor(Processor):
 
     def setup(self) -> None:
         #
-        # Parameters to expose in the future
+        # Additional parameters to maybe expose in the future:
         #
-        # * threshold
-        # * layout_nms
         # * layout_unclip_ratio
         # * layout_merge_bboxes_mode
         #
         self.detector = LayoutDetection(
             model_name="PP-DocLayout_plus-L",
             model_dir=pathlib.Path(self.resolve_resource("PP-DocLayout_plus-L")).parent,
+            threshold=self.parameter["threshold"],
+            layout_nms=self.parameter["layout_nms"],
         )
 
     def shutdown(self) -> None:
