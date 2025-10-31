@@ -14,7 +14,7 @@
         "layout_nms": {
           "default": true,
           "description": "Whether to use NMS post-processing to filter overlapping boxes.",
-          "type": "bool"
+          "type": "boolean"
         },
         "threshold": {
           "default": 50.0,
