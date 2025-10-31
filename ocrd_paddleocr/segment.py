@@ -31,6 +31,7 @@ paddleocr_label_to_pagexml_type = {
     "doc_title": (TextRegionType, "TextRegion", "heading"),
     "figure_title": (TextRegionType, "TextRegion", "heading"),
     "aside_text": (TextRegionType, "TextRegion", None),
+    "seal": (ImageRegionType, "ImageRegion", None),
 }
 
 
