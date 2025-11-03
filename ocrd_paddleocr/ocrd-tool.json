@@ -11,6 +11,16 @@
       "input_file_grp_cardinality": 1,
       "output_file_grp_cardinality": 1,
       "parameters": {
+        "layout_merge_bboxes_mode": {
+          "default": "union",
+          "description": "Merge mode for model output bounding boxes (see https://www.paddleocr.ai/latest/en/version3.x/module_usage/layout_detection.html#iii-quick-integration)",
+          "enum": [
+            "large",
+            "small",
+            "union"
+          ],
+          "type": "string"
+        },
         "layout_nms": {
           "default": true,
           "description": "Whether to use NMS post-processing to filter overlapping boxes.",

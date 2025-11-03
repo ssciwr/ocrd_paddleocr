@@ -50,6 +50,7 @@ class PaddleOCRProcessor(Processor):
             model_dir=pathlib.Path(self.resolve_resource("PP-DocLayout_plus-L")).parent,
             threshold=self.parameter["threshold"],
             layout_nms=self.parameter["layout_nms"],
+            layout_merge_bboxes_mode=self.parameter["layout_merge_bboxes_mode"],
         )
 
     def shutdown(self) -> None:
