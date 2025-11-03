@@ -89,7 +89,7 @@ class PaddleOCRProcessor(Processor):
             class_type, class_name, subtype = paddleocr_label_to_pagexml_type[label]
 
             region = class_type(
-                id=f"region_{i+1:04d}",
+                id=f"region_{i+1:04d}_{label}",
                 type_=subtype,
                 Coords=CoordsType(points=points_from_bbox(*box["coordinate"])),
             )
